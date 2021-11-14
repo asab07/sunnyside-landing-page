@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/asab07/sunnyside-landing-page)
-- Live Site URL: [Add live site URL here](https://github.com/asab07/sunnyside-landing-page/settings/pages)
+- Live Site URL: [Add live site URL here](https://asab07.github.io/sunnyside-landing-page/)
 
 ## My process
 
