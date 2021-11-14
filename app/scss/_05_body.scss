@@ -1,0 +1,63 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  .body-transform-img {
+    @include bg-img(19rem);
+    @include bg-url(mobile, transform);
+  }
+
+  .body-transform-txt {
+    min-height: 27.8rem;
+    width: 100%;
+    text-align: center;
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 2.5rem 4rem 2.5rem;
+    @include h-body;
+    @include p-body;
+    @include a-body($myYellow);
+  }
+
+  .body-stand-out-img {
+    @include bg-img(19rem);
+    @include bg-url(mobile, stand-out);
+  }
+
+  .body-stand-out-txt {
+    min-height: 27.8rem;
+    width: 100%;
+    text-align: center;
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 2.5rem 4rem 2.5rem;
+    @include h-body;
+    @include p-body;
+    @include a-body($softRed);
+  }
+
+  .body-graphic-design-img {
+    text-align: center;
+    color: $desatCyan;
+    padding: 25rem 2rem 5rem 2rem;
+    @include bg-img(37.5rem);
+    @include bg-url(mobile, graphic-design);
+    @include h-body(1.6rem, $fraunces, 900, $desatCyan, 2rem);
+    @include p-body(0.9rem, $barlow, $desatCyan, 1.5);
+  }
+
+  .body-photography-img {
+    text-align: center;
+    color: $darkBlue;
+    padding: 25rem 2rem 5rem 2rem;
+    @include bg-img(37.5rem);
+    @include bg-url(mobile, photography);
+    @include h-body(1.6rem, $fraunces, 900, $darkBlue, 2rem);
+    @include p-body(0.9rem, $barlow, $darkBlue, 1.5);
+  }
+}

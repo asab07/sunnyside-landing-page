@@ -1,0 +1,27 @@
+.gallery {
+  display: grid;
+  width: 100%;
+  min-height: 24rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+
+  .milk-bottles {
+    @include bg-img(12rem, auto);
+    @include bg-url(mobile, milkbottles);
+  }
+
+  .gallery-orange {
+    @include bg-img(12rem, auto);
+    @include bg-url(mobile, gallery-orange);
+  }
+
+  .cone {
+    @include bg-img(12rem, auto);
+    @include bg-url(mobile, cone);
+  }
+
+  .sugar-cubes {
+    @include bg-img(12rem, auto);
+    @include bg-url(mobile, sugar-cubes);
+  }
+}

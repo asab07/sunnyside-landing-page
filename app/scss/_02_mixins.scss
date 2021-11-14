@@ -1,0 +1,123 @@
+// Breakpoints
+@media (min-width: 64em) {
+  // styles
+}
+
+// Breakpoints map
+
+// 640px, 1024px, 1440px
+$breakpoints-up: (
+  "medium": "40em",
+  "large": "64em",
+  "xlarge": "90em",
+);
+
+// 639px, 1023px, 1439px
+$breakpoints-down: (
+  "small": "39.9375em",
+  "medium": "63.9375em",
+  "large": "89.9375em",
+);
+
+// Backgrounds map
+$backgrounds: (
+  "header": "image-header.jpg",
+  "transform": "image-transform.jpg",
+  "stand-out": "image-stand-out.jpg",
+  "graphic-design": "image-graphic-design.jpg",
+  "photography": "image-photography.jpg",
+  "cone": "image-gallery-cone.jpg",
+  "milkbottles": "image-gallery-milkbottles.jpg",
+  "gallery-orange": "image-gallery-orange.jpg",
+  "sugar-cubes": "image-gallery-sugar-cubes.jpg",
+);
+
+$asset-paths: (
+  "mobile": "/images/mobile/",
+  "desktop": "/images/desktop/",
+);
+
+// Mixins
+
+// Mixin for background image properties
+@mixin bg-img(
+  $minHeight: 33.75rem,
+  $bgWidth: 100%,
+  $bgRepeat: no-repeat,
+  $bgSize: cover,
+  $bgPos: center
+) {
+  min-height: $minHeight; // 540 px
+  background-repeat: $bgRepeat;
+  background-size: $bgSize;
+  background-position: $bgPos; // background focal point
+  width: $bgWidth;
+}
+
+// Mixin for background image url
+@mixin bg-url($imgPath: "/images/mobile", $img: "image-header.jpg") {
+  background-image: url(map-get($asset-paths, $imgPath) + map-get(
+      $backgrounds,
+      $img
+    ));
+}
+
+// Mixins for commonly used elements in the body
+@mixin h-body(
+  $fontSize: $font-lg,
+  $fontFamily: $fraunces,
+  $fontWeight: 900,
+  $color: black,
+  $margin: 0
+) {
+  h2 {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    color: $color;
+    margin: $margin;
+  }
+}
+
+@mixin p-body(
+  $fontSize: 1rem,
+  $fontFamily: $barlow,
+  $color: $darkGrayishBlue,
+  $lineHeight: 2,
+  $margin: 0
+) {
+  p {
+    font-size: $fontSize;
+    color: $color;
+    line-height: $lineHeight;
+    margin: $margin;
+  }
+}
+
+@mixin a-body($bgColor: yellow) {
+  a {
+    font-family: $fraunces;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+    position: relative; // for the pseudo element
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      right: -5px;
+      width: 110%;
+      height: 10px;
+      border-radius: 50px;
+      background-color: $bgColor;
+      opacity: 0.3;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.2;
+      }
+    }
+  }
+}

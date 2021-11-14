@@ -1,0 +1,198 @@
+@media (min-width: 50rem) {
+  // 720 px
+  // Header section
+  .header {
+    nav {
+      flex-direction: row;
+      align-items: center;
+    }
+    &__logo {
+      img {
+        width: 9rem;
+      }
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    @include bg-img(50rem);
+    @include bg-url(desktop, header);
+
+    &__links {
+      margin: 0;
+      padding: 0;
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      background: none;
+      align-items: center;
+      justify-content: space-between;
+      font-size: $font-sm;
+      color: $myWhite;
+      p {
+        margin: 0;
+        padding: 0;
+        a {
+          color: $myWhite;
+        }
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__cta {
+      background-color: $myWhite;
+    }
+
+    &__title {
+      margin-top: 3.5rem;
+      h1 {
+        font-size: 3.5rem;
+      }
+      img {
+        margin-top: 4.5rem;
+      }
+    }
+  }
+
+  // Body section
+  .body {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+
+    .body-transform-img {
+      @include bg-img(37.5rem);
+      @include bg-url(desktop, transform);
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+    }
+
+    .body-transform-txt {
+      text-align: left;
+      align-items: flex-start;
+      min-height: 37.5rem;
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      padding: 20% 20% 20% 25%;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .body-stand-out-img {
+      @include bg-img(37.5rem);
+      @include bg-url(desktop, stand-out);
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+    }
+
+    .body-stand-out-txt {
+      text-align: left;
+      align-items: flex-start;
+      min-height: 37.5rem;
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+      padding: 20% 20% 20% 15%;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .body-graphic-design-img,
+    .body-photography-img {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  // Testimonials section
+  .testimonials {
+    padding: 5rem 0;
+
+    h6 {
+      font-size: 1.5rem;
+    }
+
+    .clients {
+      padding: 0 5rem;
+      flex-direction: row;
+      .client {
+        padding: 0 2rem;
+      }
+    }
+  }
+
+  // Gallery section
+  .gallery {
+    width: 100%;
+    min-height: 24rem;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    .milk-bottles {
+      @include bg-img(24rem, auto);
+      @include bg-url(desktop, milkbottles);
+    }
+
+    .gallery-orange {
+      @include bg-img(24rem, auto);
+      @include bg-url(desktop, gallery-orange);
+    }
+
+    .cone {
+      @include bg-img(24rem, auto);
+      @include bg-url(desktop, cone);
+    }
+
+    .sugar-cubes {
+      @include bg-img(24rem, auto);
+      @include bg-url(desktop, sugar-cubes);
+    }
+  }
+
+  // Footer
+  .footer {
+    &__logo {
+      padding-top: 6rem;
+      img {
+        width: 11rem;
+      }
+    }
+
+    &__links {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+
+    min-height: 24rem;
+    &__links {
+      font-size: 1.2rem;
+      padding: 0 10rem;
+    }
+
+    &__icons {
+      padding: 2.5rem 6rem 0 6rem;
+    }
+
+    .attribution {
+      padding: 1rem;
+    }
+  }
+}
