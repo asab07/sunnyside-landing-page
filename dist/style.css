@@ -33,7 +33,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   width: 100%;
-  background-image: url("/images/mobile/image-header.jpg");
+  background-image: url("../images/mobile/image-header.jpg");
 }
 
 .header .hide {
@@ -203,7 +203,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   width: 100%;
-  background-image: url("/images/mobile/image-transform.jpg");
+  background-image: url("../images/mobile/image-transform.jpg");
 }
 
 .body .body-transform-txt {
@@ -272,7 +272,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   width: 100%;
-  background-image: url("/images/mobile/image-stand-out.jpg");
+  background-image: url("../images/mobile/image-stand-out.jpg");
 }
 
 .body .body-stand-out-txt {
@@ -344,7 +344,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   width: 100%;
-  background-image: url("/images/mobile/image-graphic-design.jpg");
+  background-image: url("../images/mobile/image-graphic-design.jpg");
 }
 
 .body .body-graphic-design-img h2 {
@@ -371,7 +371,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   width: 100%;
-  background-image: url("/images/mobile/image-photography.jpg");
+  background-image: url("../images/mobile/image-photography.jpg");
 }
 
 .body .body-photography-img h2 {
@@ -475,7 +475,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   width: auto;
-  background-image: url("/images/mobile/image-gallery-milkbottles.jpg");
+  background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
 }
 
 .gallery .gallery-orange {
@@ -484,7 +484,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   width: auto;
-  background-image: url("/images/mobile/image-gallery-orange.jpg");
+  background-image: url("../images/mobile/image-gallery-orange.jpg");
 }
 
 .gallery .cone {
@@ -493,7 +493,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   width: auto;
-  background-image: url("/images/mobile/image-gallery-cone.jpg");
+  background-image: url("../images/mobile/image-gallery-cone.jpg");
 }
 
 .gallery .sugar-cubes {
@@ -502,7 +502,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   width: auto;
-  background-image: url("/images/mobile/image-gallery-sugar-cubes.jpg");
+  background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
 }
 
 .footer {
@@ -583,7 +583,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     width: 100%;
-    background-image: url("/images/desktop/image-header.jpg");
+    background-image: url("../images/desktop/image-header.jpg");
   }
   .header nav {
     -webkit-box-orient: horizontal;
@@ -659,7 +659,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     width: 100%;
-    background-image: url("/images/desktop/image-transform.jpg");
+    background-image: url("../images/desktop/image-transform.jpg");
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / span 1;
@@ -693,7 +693,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     width: 100%;
-    background-image: url("/images/desktop/image-stand-out.jpg");
+    background-image: url("../images/desktop/image-stand-out.jpg");
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / span 1;
@@ -753,7 +753,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     width: auto;
-    background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
   }
   .gallery .gallery-orange {
     min-height: 24rem;
@@ -761,7 +761,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     width: auto;
-    background-image: url("/images/desktop/image-gallery-orange.jpg");
+    background-image: url("../images/desktop/image-gallery-orange.jpg");
   }
   .gallery .cone {
     min-height: 24rem;
@@ -769,7 +769,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     width: auto;
-    background-image: url("/images/desktop/image-gallery-cone.jpg");
+    background-image: url("../images/desktop/image-gallery-cone.jpg");
   }
   .gallery .sugar-cubes {
     min-height: 24rem;
@@ -777,7 +777,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     width: auto;
-    background-image: url("/images/desktop/image-gallery-sugar-cubes.jpg");
+    background-image: url("../images/desktop/image-gallery-sugar-cubes.jpg");
   }
   .footer {
     min-height: 24rem;
