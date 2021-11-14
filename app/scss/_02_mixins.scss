@@ -41,13 +41,13 @@ $asset-paths: (
 
 // Mixin for background image properties
 @mixin bg-img(
-  $minHeight: 33.75rem,
+  $height: 100vh,
   $bgWidth: 100%,
   $bgRepeat: no-repeat,
   $bgSize: cover,
   $bgPos: center
 ) {
-  min-height: $minHeight; // 540 px
+  height: $height; // 540 px
   background-repeat: $bgRepeat;
   background-size: $bgSize;
   background-position: $bgPos; // background focal point
