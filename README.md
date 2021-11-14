@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/asab07/sunnyside-landing-page)
-- Live Site URL: [Add live site URL here](https://asab07.github.io/sunnyside-landing-page/)
+- Solution URL: [GitHub Repo](https://github.com/asab07/sunnyside-landing-page)
+- Live Site URL: [GitHub Pages](https://asab07.github.io/sunnyside-landing-page/)
 
 ## My process
 
