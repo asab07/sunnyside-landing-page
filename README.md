@@ -42,6 +42,8 @@ Users should be able to:
 
 ## My process
 
+I used mobile-first workflow.
+
 ### Built with
 
 - Semantic HTML5 markup
