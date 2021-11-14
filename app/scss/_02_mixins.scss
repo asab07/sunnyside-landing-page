@@ -33,8 +33,8 @@ $backgrounds: (
 );
 
 $asset-paths: (
-  "mobile": "/images/mobile/",
-  "desktop": "/images/desktop/",
+  "mobile": "../images/mobile/",
+  "desktop": "../images/desktop/",
 );
 
 // Mixins
@@ -55,7 +55,7 @@ $asset-paths: (
 }
 
 // Mixin for background image url
-@mixin bg-url($imgPath: "/images/mobile", $img: "image-header.jpg") {
+@mixin bg-url($imgPath: "../images/mobile", $img: "image-header.jpg") {
   background-image: url(map-get($asset-paths, $imgPath) + map-get(
       $backgrounds,
       $img
