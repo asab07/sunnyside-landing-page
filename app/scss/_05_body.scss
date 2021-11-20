@@ -1,63 +1,73 @@
 .body {
-  display: flex;
-  flex-direction: column;
-  .body-transform-img {
-    @include bg-img();
-    @include bg-url(mobile, transform);
+  @include h-body(2rem);
+  @include p-body(0.95rem);
+
+  .box-313 {
+    min-height: 313px;
   }
 
-  .body-transform-txt {
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    background-color: $bgColor;
+  .box-600 {
+    height: 600px;
+  }
+
+  // Transform
+  .transform {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 2.5rem 4rem 2.5rem;
-    @include h-body;
-    @include p-body;
-    @include a-body($myYellow);
+    flex-flow: row-reverse wrap;
+
+    .img {
+      @include bg-url(mobile, transform);
+    }
+
+    .text {
+      padding: 4rem;
+      @include a-body($myYellow);
+    }
   }
 
-  .body-stand-out-img {
-    @include bg-img();
-    @include bg-url(mobile, stand-out);
-  }
-
-  .body-stand-out-txt {
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    background-color: $bgColor;
+  // Stand out
+  .stand-out {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 2.5rem 4rem 2.5rem;
-    @include h-body;
-    @include p-body;
-    @include a-body($softRed);
+    flex-flow: row wrap;
+
+    .img {
+      @include bg-url(mobile, stand-out);
+    }
+
+    .text {
+      padding: 4rem;
+      @include a-body($softRed);
+    }
   }
 
-  .body-graphic-design-img {
-    text-align: center;
-    color: $desatCyan;
-    padding: 25rem 2rem 5rem 2rem;
-    @include bg-img();
-    @include bg-url(mobile, graphic-design);
-    @include h-body(1.6rem, $fraunces, 900, $desatCyan, 2rem);
-    @include p-body(0.9rem, $barlow, $desatCyan, 1.5);
-  }
+  // Services
+  .services {
+    display: flex;
+    flex-flow: row wrap;
+    p {
+      font-size: 0.9rem;
+    }
+    // Graphic design
+    .graphic-design {
+      @include bg-url(mobile, graphic-design);
+      h2,
+      p {
+        color: $desatCyan;
+      }
+    }
 
-  .body-photography-img {
-    text-align: center;
-    color: $darkBlue;
-    padding: 25rem 2rem 5rem 2rem;
-    @include bg-img();
-    @include bg-url(mobile, photography);
-    @include h-body(1.6rem, $fraunces, 900, $darkBlue, 2rem);
-    @include p-body(0.9rem, $barlow, $darkBlue, 1.5);
+    // Photography
+    .photography {
+      @include bg-url(mobile, photography);
+
+      h2,
+      p {
+        color: $darkBlue;
+      }
+    }
+
+    .img-text {
+      padding: 25rem 1rem 0rem 1rem;
+    }
   }
 }

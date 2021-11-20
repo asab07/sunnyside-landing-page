@@ -49,7 +49,6 @@ I used mobile-first workflow.
 - Semantic HTML5 markup
 - SASS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - JavaScript - just for the mobile functionality
 

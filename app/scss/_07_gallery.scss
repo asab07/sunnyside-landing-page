@@ -1,27 +1,42 @@
 .gallery {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  min-height: 24rem;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  height: 24rem;
 
-  .milk-bottles {
-    @include bg-img(12rem, auto);
-    @include bg-url(mobile, milkbottles);
+  .gallery-1 {
+    display: flex;
+    flex-direction: row;
+
+    > * {
+      height: 12rem;
+      width: 50%;
+    }
+
+    .milk-bottles {
+      @include bg-url(mobile, milkbottles);
+    }
+
+    .gallery-orange {
+      @include bg-url(mobile, gallery-orange);
+    }
   }
 
-  .gallery-orange {
-    @include bg-img(12rem, auto);
-    @include bg-url(mobile, gallery-orange);
-  }
+  .gallery-2 {
+    display: flex;
+    flex-direction: row;
 
-  .cone {
-    @include bg-img(12rem, auto);
-    @include bg-url(mobile, cone);
-  }
+    > * {
+      height: 12rem;
+      width: 50%;
+    }
 
-  .sugar-cubes {
-    @include bg-img(12rem, auto);
-    @include bg-url(mobile, sugar-cubes);
+    .cone {
+      @include bg-url(mobile, cone);
+    }
+
+    .sugar-cubes {
+      @include bg-url(mobile, sugar-cubes);
+    }
   }
 }
